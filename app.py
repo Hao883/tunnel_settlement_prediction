@@ -93,7 +93,7 @@ class Controller(ViktorController):
     @PlotlyAndDataView("Plotly and data view", duration_guess=1)
     def get_plotly_and_data_view(self, params, **kwargs):
         model = load_model()
-        scaler = load('scaler.joblib')
+        scaler = load(Path(__file__).parent / 'scaler.joblib')
         data = {
         'To(MN·m)':[params.section2.To],
         'Pr(mm/min)':[params.section2.Pr],
