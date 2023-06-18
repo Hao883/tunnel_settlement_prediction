@@ -1,0 +1,7 @@
+viktor==14.1.0
+numpy
+tensorflow-cpu
+pandas
+joblib
+scikit-learn
+plotly
